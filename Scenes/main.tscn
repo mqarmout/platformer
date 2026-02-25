@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://byppi2jvoulys"]
+
+[ext_resource type="PackedScene" uid="uid://cwlluy07dotfr" path="res://Scenes/map.tscn" id="1_bo1nx"]
+[ext_resource type="PackedScene" uid="uid://pbmoqjvodepq" path="res://Scenes/player.tscn" id="1_jjgbg"]
+[ext_resource type="PackedScene" uid="uid://fb6rkrr78nl8" path="res://Scenes/gate.tscn" id="3_8gbba"]
+[ext_resource type="PackedScene" uid="uid://buklqdrk73caw" path="res://Scenes/base_enemy.tscn" id="4_jjvhh"]
+
+[node name="Main" type="Node2D" unique_id=635006471]
+
+[node name="Map_Manager" parent="." unique_id=2124469403 instance=ExtResource("1_bo1nx")]
+
+[node name="Player" parent="." unique_id=477775140 instance=ExtResource("1_jjgbg")]
+position = Vector2(-28.000002, 20)
+
+[node name="Camera2D" type="Camera2D" parent="Player" unique_id=468355672]
+zoom = Vector2(8, 8)
+
+[node name="Gate" parent="." unique_id=1577461733 instance=ExtResource("3_8gbba")]
+position = Vector2(28, 20)
+
+[node name="Base_Enemy" parent="." unique_id=1501385929 instance=ExtResource("4_jjvhh")]
+position = Vector2(3.9999998, 20.000002)

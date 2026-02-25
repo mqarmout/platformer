@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://buklqdrk73caw"]
+
+[ext_resource type="Script" uid="uid://cg1nexgcb018b" path="res://Scripts/base_enemy.gd" id="1_kjpuc"]
+[ext_resource type="Texture2D" uid="uid://cav3aoalxsxr1" path="res://icon.svg" id="1_wsate"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_wsate"]
+radius = 66.66667
+
+[node name="Base_Enemy" type="CharacterBody2D" unique_id=1501385929 node_paths=PackedStringArray("ray")]
+scale = Vector2(0.06, 0.06)
+script = ExtResource("1_kjpuc")
+ray = NodePath("RayCast2D")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1448376024]
+modulate = Color(0.82037795, 0, 0.08264317, 1)
+texture = ExtResource("1_wsate")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1033583231]
+scale = Vector2(0.9, 0.9)
+shape = SubResource("CircleShape2D_wsate")
+
+[node name="RayCast2D" type="RayCast2D" parent="." unique_id=1895581856]
+rotation = 1.5707964
+target_position = Vector2(1.2384893e-05, 283.3333)
