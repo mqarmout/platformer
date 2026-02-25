@@ -1,0 +1,17 @@
+63f7b34db8d8cdea90c76aacccf841ec
+::res://::1771979778
+icon.svg::CompressedTexture2D::4817894111877080472::1771534085::1771979778::1::::<><><>0<>0<>d089b273879588d6d4092fc8ee3b874f<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+README.md::TextFile::-1::1771979014::0::1::::<><><>0<>0<><>::
+::res://Assets/::1771535633
+Itch release raw tileset 01.png::CompressedTexture2D::6661244753897640345::1770774778::1771979778::1::::<><><>0<>0<>cd08033190f1d9acc5a39bdbb92ac231<>res://.godot/imported/Itch release raw tileset 01.png-ff97ff91e3b3cbfeed5c92a990f6e8d6.ctex::
+::res://Scenes/::1771804727
+base_enemy.tscn::PackedScene::3811537977947201278::1771804727::0::1::::<><><>0<>0<><>::uid://cg1nexgcb018b::::res://Scripts/base_enemy.gd<>uid://cav3aoalxsxr1::::res://icon.svg
+gate.tscn::PackedScene::354921733528019251::1771804316::0::1::::<><><>0<>0<><>::uid://cav3aoalxsxr1::::res://icon.svg<>uid://70lra32p6dik::::res://Scripts/gate.gd
+main.tscn::PackedScene::4102845071566856910::1771634394::0::1::::<><><>0<>0<><>::uid://cwlluy07dotfr::::res://Scenes/map.tscn<>uid://pbmoqjvodepq::::res://Scenes/player.tscn<>uid://fb6rkrr78nl8::::res://Scenes/gate.tscn<>uid://buklqdrk73caw::::res://Scenes/base_enemy.tscn
+map.tscn::PackedScene::6340408986155129959::1771613739::0::1::::<><><>0<>0<><>::uid://c150y0op1qdan::::res://Assets/Itch release raw tileset 01.png<>uid://byw33ql8ru0ci::::res://Scripts/map.gd
+player.tscn::PackedScene::1055651492602229366::1771634430::0::1::::<><><>0<>0<><>::uid://cikm0sgul6rns::::res://Scripts/player.gd<>uid://cav3aoalxsxr1::::res://icon.svg
+::res://Scripts/::1771804631
+base_enemy.gd::GDScript::5248445932300634979::1771804631::0::1::::<>CharacterBody2D<><>0<>0<><>::
+gate.gd::GDScript::2298350730187892334::1771616433::0::1::::<>Area2D<><>0<>0<><>::
+map.gd::GDScript::4118120178511344064::1771547074::0::1::::<>TileMapLayer<><>0<>0<><>::
+player.gd::GDScript::5355770098405654712::1771804316::0::1::::<>CharacterBody2D<><>0<>0<><>::
