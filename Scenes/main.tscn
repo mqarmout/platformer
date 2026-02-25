@@ -19,4 +19,4 @@ zoom = Vector2(8, 8)
 position = Vector2(28, 20)
 
 [node name="Base_Enemy" parent="." unique_id=1501385929 instance=ExtResource("4_jjvhh")]
-position = Vector2(3.9999998, 20.000002)
+position = Vector2(20, 20)
