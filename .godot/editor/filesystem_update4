@@ -1,4 +1,6 @@
-res://Scenes/map.tscn
-res://Scenes/base_enemy.tscn
-res://Scripts/base_enemy.gd
 res://Scenes/main.tscn
+res://Scripts/base_enemy.gd
+res://Scenes/base_enemy.tscn
+res://Scenes/player.tscn
+res://Scripts/player.gd
+res://Scenes/gate.tscn

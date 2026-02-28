@@ -5,6 +5,7 @@ const JUMP_VELOCITY = -160.0
 var direction:int = -1
 var can_move:bool = true
 var timer = Timer.new()
+var is_ready:bool
 @export var front_ray:RayCast2D
 @export var floor_ray:RayCast2D
 
@@ -24,16 +25,25 @@ func facing_wall() -> void:
 	can_move = true
 
 func _physics_process(delta: float) -> void:
-	if not is_on_floor():
-		velocity += get_gravity() * delta
-	if front_ray.is_colliding():
-		if front_ray.get_collider().name == "Player":
-			print("follow the player")
-		elif front_ray.get_collider().name == "Map_Manager":
+	if is_on_floor() && !is_ready:
+		is_ready = true
+	if is_ready:
+		#I don't think having all the raycasts in the same area is a great idea
+		#There has to be a better way, a signal of sorts
+		if not is_on_floor():
+			velocity += get_gravity() * delta
+		if front_ray.is_colliding():
+			if front_ray.get_collider().name == "Player":
+				print("follow the player")
+			elif front_ray.get_collider().name == "Map_Manager":
+				facing_wall()
+		if !floor_ray.is_colliding():
 			facing_wall()
-	if !floor_ray.is_colliding():
-		print("there is no floor!")
 	
 	if can_move:
 		move(direction)
 	move_and_slide()
+
+
+func _on_ready() -> void:
+	is_ready = false
