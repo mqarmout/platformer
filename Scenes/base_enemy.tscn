@@ -4,12 +4,12 @@
 [ext_resource type="Texture2D" uid="uid://cav3aoalxsxr1" path="res://icon.svg" id="1_wsate"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_wsate"]
-radius = 74.07407
+radius = 68.89785
 
 [node name="Base_Enemy" type="CharacterBody2D" unique_id=1501385929 node_paths=PackedStringArray("front_ray", "floor_ray")]
 scale = Vector2(0.06, 0.06)
 script = ExtResource("1_kjpuc")
-front_ray = NodePath("FrontRayCast")
+front_ray = NodePath("WallRayCast")
 floor_ray = NodePath("FloorRayCast")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1448376024]
@@ -20,13 +20,13 @@ texture = ExtResource("1_wsate")
 scale = Vector2(0.9, 0.9)
 shape = SubResource("CircleShape2D_wsate")
 
-[node name="FrontRayCast" type="RayCast2D" parent="." unique_id=1895581856]
-rotation = 1.5707964
-target_position = Vector2(1.2384893e-05, 283.3333)
+[node name="WallRayCast" type="RayCast2D" parent="." unique_id=1895581856]
+target_position = Vector2(283, 0)
 
 [node name="FloorRayCast" type="RayCast2D" parent="." unique_id=1836734853]
-rotation = -3.1415925
-scale = Vector2(0.99999994, 0.99999994)
-target_position = Vector2(283.33334, -83.33339)
+target_position = Vector2(283, 83)
+
+[node name="ObjectRayCast" type="RayCast2D" parent="." unique_id=1593786906]
+target_position = Vector2(283, -83)
 
 [connection signal="ready" from="." to="." method="_on_ready"]
